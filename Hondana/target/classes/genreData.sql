@@ -1,0 +1,1 @@
+insert into genre (id,name) values (1,'Comedy'), (2,'Adventure'),(3,'Sport'),(4,'Fantasy');

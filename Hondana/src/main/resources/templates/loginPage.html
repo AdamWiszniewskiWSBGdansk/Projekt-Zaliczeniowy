@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logowanie</title>
+    <link rel="stylesheet" href="/LoginPage/loginPage.css" type="text/css">
+    <script src="/LoginPage/RecoverPassowrdScript.js" defer></script>
+    <script src="/LoginPage/RegistrationScript.js" defer></script>
+</head>
+<body>
+<section class="top">
+    <nav id="NavBar">
+        <ul>
+            <li><a href="/">Strona główna</a></li>
+            <li><a href="#">Książki</a></li>
+            <li><a href="#">Mangi</a></li>
+            <li><a href="#">Outlet</a></li>
+            <li><a href="#">Promocje</a></li>
+        </ul>
+    </nav>
+</section>
+
+<div class="login-container">
+    <h2>Zaloguj się</h2>
+    <form action="#" method="POST">
+        <div class="input-group">
+            <label for="login">Login:</label>
+            <input type="text" id="login" name="login">
+        </div>
+        <div class="input-group">
+            <label for="password">Hasło:</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <div class="button-group">
+            <button id="LogiInBtn" type="submit">Zaloguj</button>
+            <button id="recover-password-button" type="button">Odzyskaj hasło</button>
+            <button id="show-registration-button" type="button">Zarejestruj się</button>
+        </div>
+    </form>
+</div>
+
+<div id="password-recovery-popup" class="popup-container">
+    <div class="popup-content">
+        <span class="close" id="close">&times;</span>
+        <h2>Odzyskiwanie hasła</h2>
+        <form action="#" method="POST">
+            <div class="input-group">
+                <label for="rec-email">Email:</label>
+                <input type="email" id="rec-email" name="email" required>
+            </div>
+            <div class="button-group">
+                <button type="submit">Wyślij</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="registration-popup" class="popup-container">
+    <div class="popup-content">
+        <span class="close" id="close-reg">&times;</span>
+        <h2>Rejestracja</h2>
+        <form action="#" method="POST">
+            <div class="input-group">
+                <label for="reg-email">Email:</label>
+                <input type="email" id="reg-email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="login">Login:</label>
+                <input type="text" id="reg-login" name="login" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Hasło:</label>
+                <input type="password" id="reg-password" name="password" required>
+            </div>
+            <div class="button-group">
+                <button type="submit">Zarejestruj</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

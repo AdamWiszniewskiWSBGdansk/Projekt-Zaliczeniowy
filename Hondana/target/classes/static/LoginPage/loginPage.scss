@@ -1,0 +1,200 @@
+/* Resetowanie stylów */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styl dla górnej sekcji */
+.top {
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+}
+
+/* Styl dla nawigacji */
+#NavBar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8f9fa;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Styl dla listy nawigacyjnej */
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+/* Styl dla elementów listy */
+li {
+  margin-right: 20px;
+}
+
+/* Styl dla linków */
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  color: #007bff;
+}
+
+/* Styl dla kontenera logowania */
+.login-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 70px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styl dla nagłówka */
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Styl dla grupy inputów */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Styl dla grupy przycisków */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-group button, .button-group a {
+  flex: 1; /* Ustawienie takiej samej szerokości dla przycisków */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button-group button {
+  background-color: #007bff;
+  border: none;
+}
+
+/* Styl dla kontenera okna popup odzyskiwania hasła */
+.popup-container {
+  display: none; /* Ukrycie domyślnie */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Półprzezroczyste tło */
+  z-index: 999; /* Wysoki indeks z-index, aby okno było na wierzchu */
+}
+
+/* Styl dla zawartości okna popup odzyskiwania hasła */
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Styl dla przycisku zamknięcia okna popup */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Styl dla kontenera okna popup rejestracji */
+#registration-popup {
+  display: none; /* Ukrycie domyślnie */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Półprzezroczyste tło */
+  z-index: 999; /* Wysoki indeks z-index, aby okno było na wierzchu */
+}
+
+/* Styl dla zawartości okna popup rejestracji */
+#registration-popup .popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Styl dla nagłówka formularza rejestracji */
+#registration-popup h2 {
+  margin-bottom: 20px;
+}
+
+/* Styl dla grupy inputów w formularzu rejestracji */
+#registration-popup .input-group {
+  margin-bottom: 20px;
+}
+
+#registration-popup .input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#registration-popup .input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Styl dla grupy przycisków w formularzu rejestracji */
+#registration-popup .button-group {
+  display: flex;
+  justify-content: center;
+}
+
+#registration-popup .button-group button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #007bff;
+  border: none;
+}
+
